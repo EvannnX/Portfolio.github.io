@@ -1398,9 +1398,8 @@
         </div>
       </div>
 
-      <div class="arch-item">
-        <div class="arch-icon">👁️</div>
-        <div class="arch-text">
+      <div class="arch-item" style="margin-top:40px; display:flex; gap:32px; align-items:center;">
+        <div class="arch-text" style="flex:1;">
           <h3 style="color:var(--text); margin-bottom:8px;">2. 认知引擎的重构：流式视觉捕捉</h3>
           <p>这是本项目遭遇的最大技术壁垒。在早期的原型测试中，我们遭遇了所谓的<strong>“金鱼记忆”</strong>问题：传统的视频大模型在处理长视频流时，会因为“键值缓存”（KV
             Cache）溢出而崩溃。这意味着，如果用户戴着眼镜从南京东路的一头走到另一头，几分钟后人工智能就会“忘记”他在起点处看到的建筑风格。这对于强调连续叙事体验的漫步导览是致命的。</p>
@@ -1412,11 +1411,14 @@
             <li><strong>性能实测：</strong> 实验数据显示，在连续运行 2 小时后，系统的显存占用率保持平稳，彻底解决了传统模型运行 15 分钟就断片的体验顽疾。</li>
           </ul>
         </div>
+        <div style="width:360px; flex-shrink:0;">
+          <img src="assets/images/projects/Echoes/vlmflow.jpg" alt="流式视觉捕捉"
+            style="width:100%; height:auto; display:block; border-radius:12px;">
+        </div>
       </div>
 
-      <div class="arch-item">
-        <div class="arch-icon">📚</div>
-        <div class="arch-text">
+      <div class="arch-item" style="margin-top:40px; display:flex; gap:32px; align-items:center;">
+        <div class="arch-text" style="flex:1;">
           <h3 style="color:var(--text); margin-bottom:8px;">3. 知识护城河：基于街道档案的检索增强生成</h3>
           <p>为了解决生成式人工智能容易产生<strong>“虚假信息”（即幻觉）</strong>的问题——这在严肃的历史领域是绝对的红线——我们构建了<strong>“文化遗产检索增强生成（Cultural
               RAG）”</strong>架构。这是一个专门为回应高知群体及考据型用户而设计的防幻觉机制。且为了保证内容的独家性与在地性，我们并未接入通用的互联网百科数据，而是与南京东路街道达成了深度数据合作。</p>
@@ -1428,6 +1430,10 @@
             <li><strong>叙事合成：</strong> 最后，大模型将这些经过验证的、带有“烟火气”的权威档案作为上下文，进行口语化的叙事合成。</li>
           </ul>
           <p style="margin-top:12px;">这一架构确保了每一句解说不仅具有学术级的准确性，更拥有无可替代的“在地感”。我们提供的不是百度百科式的标准答案，而是这片土地深处真实的记忆回响。</p>
+        </div>
+        <div style="width:360px; flex-shrink:0;">
+          <img src="assets/images/projects/Echoes/RAGflow.jpg" alt="基于街道档案的检索增强生成"
+            style="width:100%; height:auto; display:block; border-radius:12px;">
         </div>
       </div>
     </div>
